@@ -1,0 +1,30 @@
+/* Style for the body to use flexbox for centering */
+body {
+    margin: 0;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Start ball at the top */
+    background-color: #080101;
+}
+  
+  /* Style for the ball */
+.ball {
+    width: 150px; /* Ball size */
+    height: 150px;
+    background-color: #19c9c9;
+    border-radius: 50%;
+    position: relative;
+    animation: bounce 3s infinite ease-in-out;
+}
+  
+  /* Keyframes for the bouncing animation */
+@keyframes bounce {
+from {
+    transform: translateY(0); /* Start at the top */
+    }
+to {
+    transform: translateY(calc(100vh - 100px)); /* Move to the bottom */
+   }
+}
+  
